@@ -1,0 +1,32 @@
+[
+{
+  "directory": "C:/Users/58348/Desktop/gm-main/c/build",
+  "command": "D:\\360Downloads\\x86_64-8.1.0-release-win32-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe   -g -o CMakeFiles\\gm_test.dir\\gm_test.c.obj -c C:\\Users\\58348\\Desktop\\gm-main\\c\\gm_test.c",
+  "file": "C:/Users/58348/Desktop/gm-main/c/gm_test.c"
+},
+{
+  "directory": "C:/Users/58348/Desktop/gm-main/c/build",
+  "command": "D:\\360Downloads\\x86_64-8.1.0-release-win32-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe   -g -o CMakeFiles\\gm_test.dir\\gm.c.obj -c C:\\Users\\58348\\Desktop\\gm-main\\c\\gm.c",
+  "file": "C:/Users/58348/Desktop/gm-main/c/gm.c"
+},
+{
+  "directory": "C:/Users/58348/Desktop/gm-main/c/build",
+  "command": "D:\\360Downloads\\x86_64-8.1.0-release-win32-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe   -g -o CMakeFiles\\gm_test.dir\\randombytes.c.obj -c C:\\Users\\58348\\Desktop\\gm-main\\c\\randombytes.c",
+  "file": "C:/Users/58348/Desktop/gm-main/c/randombytes.c"
+},
+{
+  "directory": "C:/Users/58348/Desktop/gm-main/c/build",
+  "command": "D:\\360Downloads\\x86_64-8.1.0-release-win32-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe   -g -o CMakeFiles\\gm_test.dir\\sm2.c.obj -c C:\\Users\\58348\\Desktop\\gm-main\\c\\sm2.c",
+  "file": "C:/Users/58348/Desktop/gm-main/c/sm2.c"
+},
+{
+  "directory": "C:/Users/58348/Desktop/gm-main/c/build",
+  "command": "D:\\360Downloads\\x86_64-8.1.0-release-win32-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe   -g -o CMakeFiles\\gm_test.dir\\sm3.c.obj -c C:\\Users\\58348\\Desktop\\gm-main\\c\\sm3.c",
+  "file": "C:/Users/58348/Desktop/gm-main/c/sm3.c"
+},
+{
+  "directory": "C:/Users/58348/Desktop/gm-main/c/build",
+  "command": "D:\\360Downloads\\x86_64-8.1.0-release-win32-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe   -g -o CMakeFiles\\gm_test.dir\\sm4.c.obj -c C:\\Users\\58348\\Desktop\\gm-main\\c\\sm4.c",
+  "file": "C:/Users/58348/Desktop/gm-main/c/sm4.c"
+}
+]

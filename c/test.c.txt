@@ -1,0 +1,47 @@
+
+
+
+#include <stdio.h>
+#include <stdint.h>
+#include <asm/types.h>
+
+typedef uint64_t gm_bn_t[8];
+
+static void gm_i_bn_add_x(gm_bn_t r, const gm_bn_t a, const gm_bn_t b, int count) {
+    int i;
+    r[0] = a[0] + b[0];
+    for (i = 1; i < count; i++) {
+        asm volatile (
+            "ldr x3, %[i]\n\t"
+            "ldr x0, [%[a], x3, LSL #3]\n\t"
+            "ldr x1, [%[b], x3, LSL #3]\n\t"
+            "add x2, x0, x1\n\t"
+            "str x2, [%[r], x3, LSL #3]\n\t"
+            : [r] "+r" (r), [a] "+r" (a), [b] "+r" (b), [i] "+r" (i)
+            :
+            : "x0", "x1", "x2", "x3", "memory"
+        );
+    }
+}
+
+int main() {
+    int count = 8;
+    gm_bn_t r = {
+        0x0, 0x0, 0x0, 0x0,
+        0x0, 0x0, 0x0, 0x0
+    };
+    gm_bn_t a = {
+        0x1, 0x1, 0x1, 0x2,
+        0x2, 0x2, 0x2, 0x2
+    };
+    gm_bn_t b = {
+        0x1, 0x1, 0x0, 0x0,
+        0x0, 0x1, 0x0, 0x0
+    };
+    gm_i_bn_add_x(r, a, b, count);
+    for (int i = 0; i < 8; i++) {
+        printf("%lu", r[i]);
+
+    }
+    return 0;
+}
